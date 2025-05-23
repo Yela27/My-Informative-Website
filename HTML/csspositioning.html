@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exact CSS Position Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Static */
+    .static {
+      background: #4da6ff;
+      color: white;
+      padding: 10px;
+      position: static;
+    }
+
+    /* Absolute */
+    .absolute {
+      background: #ffe600;
+      color: black;
+      padding: 10px;
+      position: absolute;
+      top: 30px; /* Adjusted to match overlap */
+      left: 0;
+      width: 100%;
+    }
+
+    /* Relative */
+    .relative {
+      background: #008000;
+      color: white;
+      padding: 10px;
+      position: relative;
+      top: 60px; /* Further down */
+    }
+
+    /* Fixed */
+    .fixed {
+      background: #004080;
+      color: white;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 180px;
+      text-align: center;
+      z-index: 10;
+    }
+
+    /* Sticky */
+    .sticky {
+      background: #1a1a80;
+      color: white;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+
+    /* Content */
+    .content {
+      background: #e6e6e6;
+      padding: 20px;
+      height: 1500px; /* Scrollable */
+      margin-top: 120px; /* So it doesn't cover the sticky */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="static">Static Position (Default)</div>
+  <div class="absolute">Absolute Position (Moves relative to nearest positioned ancestor)</div>
+  <div class="relative">Relative Position (Moves relative to itself)</div>
+  <div class="fixed">Fixed Position (Always visible)</div>
+  <div class="sticky">Sticky Position (Stays visible when scrolling)</div>
+
+  <div class="content">
+    <p>Scroll down to see the sticky header effect.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Web Design</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0066a2;
+      color: white;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #29abe2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+
+    .feature {
+      background-color: #007a33;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      min-width: 200px;
+      font-size: 18px;
+      flex: 1 1 300px;
+      max-width: 300px;
+    }
+
+    footer {
+      background-color: #1a165a;
+      color: white;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .features {
+        flex-direction: column;
+      }
+
+      .feature {
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Web Design</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="features">
+    <div class="feature">Feature 1</div>
+    <div class="feature">Feature 2</div>
+    <div class="feature">Feature 3</div>
+  </section>
+
+  <footer>
+    © 2024 Responsive Design Example
+  </footer>
+
+</body>
+</html>
